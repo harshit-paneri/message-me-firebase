@@ -19,30 +19,34 @@ const Reactcontact = () => {
     e.preventDefault();
     const { name, email, mobile, message } = user;
 
-    const res = await fetch(
-      "https://message-app-40387-default-rtdb.firebaseio.com/message-data.json",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          mobile,
-          message,
-        }),
-      }
-    );
+    if (name && email && mobile && message) {
+      const res = await fetch(
+        "https://message-app-40387-default-rtdb.firebaseio.com/message-data.json",
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            mobile,
+            message,
+          }),
+        }
+      );
 
-    if (res) {
-      setUser({
-        name: "",
-        email: "",
-        mobile: "",
-        message: "",
-      });
-      alert("Data Stored Successfuly");
+      if (res) {
+        setUser({
+          name: "",
+          email: "",
+          mobile: "",
+          message: "",
+        });
+        alert("Data Stored Successfuly");
+      }
+    } else {
+      alert("Please fill all the Data");
     }
   };
   return (
