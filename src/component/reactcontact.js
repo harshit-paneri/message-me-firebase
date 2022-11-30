@@ -17,7 +17,7 @@ const Reactcontact = () => {
 
   const postData = async (e) => {
     e.preventDefault();
-    const {name,email,mobile,message} = user;
+    const { name, email, mobile, message } = user;
 
     const res = await fetch(
       "https://message-app-40387-default-rtdb.firebaseio.com/message-data.json",
@@ -34,6 +34,16 @@ const Reactcontact = () => {
         }),
       }
     );
+
+    if (res) {
+      setUser({
+        name: "",
+        email: "",
+        mobile: "",
+        message: "",
+      });
+      alert("Data Stored Successfuly");
+    }
   };
   return (
     <>
