@@ -7,8 +7,13 @@ const Reactcontact = () => {
         mobile : "",
         message : "",
     });
+    let name, value;
+    const getUserData = (event) => {
+        name = event.target.name;
+        value = event.target.value;
 
-    const getUserData = () => {}
+        setUser({...user , [name] : value});
+    };
   return (
     <>
       <h1>Message from Techspeed</h1>
@@ -21,17 +26,17 @@ const Reactcontact = () => {
 
         <div>
         <span>Your Email</span>
-        <input type="text" name="email" value={user.name} onChange={getUserData} id="" />
+        <input type="text" name="email" value={user.email} onChange={getUserData} id="" />
         </div>
 
         <div>
         <span>Your Mobile</span>
-        <input type="text" name="mobile" value={user.name} onChange={getUserData} id="" />
+        <input type="text" name="mobile" value={user.mobile} onChange={getUserData} id="" />
         </div>
 
         <div>
         <span>Your Message</span>
-        <textarea name="message" value={user.name} onChange={getUserData} id="" />
+        <textarea name="message" value={user.message} onChange={getUserData} id="" />
         </div>
       </form>
     </>
