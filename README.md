@@ -1,30 +1,10 @@
-# Getting Started with Create React App
+# Message Me Firebase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is created with ReactJS, NodeJS, Firebase.
 
-## Available Scripts
+## First Look of the Project : 
+![image](https://user-images.githubusercontent.com/82382478/206435348-44d45b8e-8507-4490-8131-4cc1bcd02d25.png)
 
-In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## First Look of the Data Base/ Firebase
+<img width="952" alt="image" src="https://user-images.githubusercontent.com/82382478/206435970-902697e0-734d-4703-98da-4bba2f0b9cda.png">
