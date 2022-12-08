@@ -62,12 +62,12 @@ const Reactcontact = () => {
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"
       ></script>
-      <div className="all row">
+      <div className="all row my-5">
         <h1 className="head col-8">Message from Techspeed</h1>
 
-        <form action="" method="POST" className="form col-6">
-          <span className="span">Message Me</span>
-          <div className="name">
+        <form action="" method="POST" className="form col-6 my-5">
+          
+          <div className="name my-3">
             <span>Your Name</span>
             <input
               type="text"
@@ -80,7 +80,7 @@ const Reactcontact = () => {
             />
           </div>
 
-          <div>
+          <div className="name my-3">
             <span>Your Email</span>
             <input
               type="text"
@@ -91,7 +91,7 @@ const Reactcontact = () => {
             />
           </div>
 
-          <div>
+          <div className="name my-3">
             <span>Your Mobile</span>
             <input
               type="text"
@@ -102,7 +102,7 @@ const Reactcontact = () => {
             />
           </div>
 
-          <div>
+          <div className="name my-3">
             <span>Your Message</span>
             <textarea
               name="message"
@@ -112,7 +112,7 @@ const Reactcontact = () => {
             />
           </div>
 
-          <div>
+          <div className="name my-3">
             <button onClick={postData}>
               <span>Submit</span>
             </button>
